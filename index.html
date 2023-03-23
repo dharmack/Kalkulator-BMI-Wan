@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="index.js"></script>
+		<link rel="stylesheet" href="index.css">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		
+		<title>Document</title>
+	</head>
+	<body>
+	<div class="container-fluid">
+		<form name="bmiForm">
+			<div class="row">
+				<div class="col-md-6" style="background-color:#aaa;">
+					<h1>Kalkulator BMI</h1>
+					<p>Berat badan ideal adalah impian semua orang. Tidak hanya bentuk tubuh yang menunjang penampilan,
+						berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
+					</p>
+					<b>Jenis Kelamin </b><br/>
+					<input type="radio"  name="jk" id="jk" value="Pria" required="true">
+					<label for="jk">Pria</label>
+					<input type="radio"  name="jk" id="jk2" value="Wanita" required="true">
+					<label for="jk2">Wanita</label>
+					<br/>
+					<b>Berat Badan(kg)</b><br/>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<i class="fas fa-pencil-alt"></i>
+							</div>
+						</div>
+						<input type="text"  class="form-control" name="weight" required="true"/>
+					</div><br/>
+					
+					<b>Usia(tahun)</b><br/>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<i class="fas fa-pencil-alt"></i>
+							</div>
+						</div>
+						<input type="text"  class="form-control" name="usia" required="true"/>
+					</div><br/>
+					
+					<b>Tinggi Badan(m): (pemisah desimal titik)</b><br/>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text">
+								<i class="fas fa-pencil-alt"></i>
+							</div>
+						</div>
+						<input type="text"  class="form-control" name="height" required="true"/>	
+					</div><br/>
+			
+					<input type="button"  value="Hitung BMI" onClick="calculateBmi()"> 
+					<input type="reset" value="Reset"  />
+					<div class="bawahtext" style="background-color:#ffffff;">
+						<h4>Keunggulan Fitur</h4>
+						<ol>
+							<li>Menghitung Berat Badan</li>
+							<li>Menentukan kategori berat badan ideal atau tidak</li>
+							<li>Mempersiapkan program penurunan berat badan</li>
+						</ol>
+						<p align="justify">Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)	dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat sepeti dokter</p>
+						<p align="justify">
+						Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam Kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI= Kg/M<sup>2</sup>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-6" style="background-color:#bbb;">
+					<h4>Hasil</h4>
+					<div align="center">
+						<h1 class="result" id="result" ></h1>
+						<p class="result-statement" id="result-statement" ></p>
+						<h6 class="antara" id="antara"></h6>
+						<h5 class="bwi" id="bwi"></h5>
+						<h6 class="dan1" id="dan1"></h6>
+						<h5 class="ati" id="ati"></h5>
+						<input type="button"  value="Download Hasil BMI">
+					</div>
+					
+					<div align="justify">
+						<p class="saran" id="saran" ></p>
+							<br/>
+						<input type="button"  value="Download Hasil BMI"><input type="button"  value="Download Hasil BMI"><br/>
+						BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu berkonsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan Berat Badan Anda
+						<br>
+						<h6>Beberapa penyakit yang berasal dari kegemukan</h6> 
+						<p align="center">Diabetes<br>Hipertensi<br>Sakit Jantung<br>Osteoarhritis</p>
+					</div>
+					<footer>
+						<h5>Download Aplikasinya!</h5>
+						<img src="assets\gp.png" width="40%">
+						<img src="assets\as.png" width="40%">
+					</footer>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+		
+	</body>
+</html>

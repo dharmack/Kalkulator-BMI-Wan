@@ -1,0 +1,35 @@
+
+input[type="button"] {
+	background-color: #81D4FA;
+	border-radius: 5px;
+	border:none;
+	color: white;
+	padding: 7px 22px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	
+	margin: 4px 2px;
+	cursor: pointer;
+}
+body input[type="button"]:hover {
+	background-color: #4CAF50;
+	color: white;
+    transition:0.7s;
+	.resbutton {
+		background-color: #81D4FA;
+		border-radius: 5px;
+		border:none;
+		color: white;
+		padding: 7px 22px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+	
+	margin: 4px 2px;
+	cursor: pointer;
+}
+}
+/* .flcon{
+	flex-direction: row
+} */
